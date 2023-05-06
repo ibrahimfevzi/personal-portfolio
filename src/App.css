@@ -1,38 +1,294 @@
 .App {
+  width: auto;
+  max-width: 1800px;
   text-align: center;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*TOGGLEBAR*/
+
+.modeSwitch {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modeText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+
+  color: #777777;
+}
+#lang {
+  color: #4731d3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 3px;
+  bottom: 0;
+  background-color: #4731d3;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffe86e;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch-checkbox:checked + .slider {
+  background-color: #3a3a3a;
+}
+
+.toggle-switch-checkbox:checked + .slider:before {
+  transform: translateX(26px); /* transform değeri değiştirildi */
+}
+
+/*HEADER*/
+
+.header {
+  padding-top: 20px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex: 2;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #7b61ff;
+  width: 63.68px;
+  height: 62px;
+  background: #eeebff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  transform: matrix(0.87, 0.49, -0.51, 0.86, 0, 0);
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  gap: 5.5rem;
+}
+.headerLinks a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.headerLinks a:hover {
+  color: #4731d3;
+}
+
+#contactLink {
+  border: 1px solid #4731d3;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+#contactLink:hover {
+  background-color: #4731d3;
+  color: #fff;
+}
+
+/*HERO*/
+
+.lineContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.introContent {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.introButtons {
+  flex-wrap: wrap;
+}
+
+.lineContainer {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4338ca;
+}
+.line {
+  width: 102px;
+  height: 0px;
+  border: 1px solid #3730a3;
+}
+
+.introContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.introText {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  text-align: left;
+  margin-right: 10rem;
+}
+.introContent h1 {
+  font-weight: 700;
+  font-size: 72px;
+  color: #1f2937;
+}
+
+.introContent p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #6b7280;
+  margin-top: 25px;
+}
+
+.introContent a {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 12px 20px 12px 12px;
+  gap: 10px;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  width: 120px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.introContent a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.introImage {
+  max-height: 375px;
+  width: auto;
+  height: auto;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  border-radius: 18px;
+  flex: 1;
+  filter: grayscale(90%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.introButtons {
+  display: flex;
+  gap: 20px;
+  margin-top: 5%;
+}
+
+/*SKILLS*/
+
+.skillsContainer {
+  width: 100%;
+}
+
+.skillsContainer h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
+
+  /* or 100% */
+
+  color: #1f2937;
+  margin-top: 3rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.skill {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: left;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+
+  color: #4338ca;
+}
+
+.skillText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  padding-top: 2rem;
+  padding-right: 7rem;
 }
