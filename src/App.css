@@ -1,10 +1,11 @@
 .App {
   width: auto;
-  max-width: 1800px;
   text-align: center;
-  padding-right: 10rem;
-  padding-left: 10rem;
   padding-top: 2rem;
+}
+
+.header-body {
+  padding: 0 10rem;
 }
 
 /*TOGGLEBAR*/
@@ -247,6 +248,7 @@
   font-size: 48px;
   line-height: 48px;
   display: flex;
+  margin-bottom: 3rem;
 
   /* or 100% */
 
@@ -291,4 +293,253 @@
   color: #6b7280;
   padding-top: 2rem;
   padding-right: 7rem;
+}
+
+/*PROFILE*/
+
+.cizgi {
+  border: 1px solid #bab2e7;
+}
+
+.profileText h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
+  color: #1f2937;
+  margin-top: 3rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.profileLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  text-align: left;
+}
+
+.profileLeft h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+  color: #4338ca;
+}
+
+.profileRight {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  text-align: left;
+}
+
+.profileRight h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+  color: #4338ca;
+}
+
+.profileRight p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #6b7280;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+.profileInfoLeft p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.profileInfoRight p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+/*PROJECTS*/
+
+.projectsContainer {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.projectsText h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
+  color: #1f2937;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projectItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+/*CARDS*/
+
+.card {
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+  padding: 25px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.list-group {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.links a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #3730a3;
+}
+
+.links a:hover {
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+/*FOOTER*/
+
+footer h3 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 125%;
+  color: #1f2937;
+  padding-top: 5%;
+  text-align: left;
+}
+
+.contactContainer {
+  background: #f9f9f9;
+  height: 409px;
+  width: 100%;
+  padding: 0 10rem;
+}
+
+footer p {
+  margin: 3% 0;
+  display: flex;
+  justify-content: baseline;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+.github {
+  font-weight: 500;
+  font-size: 18px;
+  color: #00ab6b;
+  text-decoration: none;
+  margin-right: 2%;
+}
+
+.linkedin {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.websites {
+  display: flex;
+  gap: 3rem;
+}
+
+.email {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #3730a3;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+/*DARK MODE */
+
+.dark-mode {
+  background-color: #252128;
+  color: #fff;
+}
+
+.dark-mode .card {
+  background-color: #252128;
+  color: #fff;
+}
+
+.dark-mode .contactContainer {
+  background-color: #141414;
+  color: #fff;
 }

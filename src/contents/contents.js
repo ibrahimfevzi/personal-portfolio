@@ -4,3 +4,6 @@ export const introText =
 export const githubLink = "https://github.com/ibrahimfevzi";
 
 export const linkedinLink = "https://www.linkedin.com/in/ibrahim-f-kayan/";
+
+export const pizzaStoreText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Mnima veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
