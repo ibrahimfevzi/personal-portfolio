@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 
-const Projects = () => {
+const Projects = ({ darkMode }) => {
   return (
     <div className="projectsContainer">
       <div className="cizgi"></div>
@@ -9,9 +9,9 @@ const Projects = () => {
         <h1>Projects</h1>
       </div>
       <div className="projectItems">
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards darkMode={darkMode} />
+        <Cards darkMode={darkMode} />
+        <Cards darkMode={darkMode} />
       </div>
     </div>
   );

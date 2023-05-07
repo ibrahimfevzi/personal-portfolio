@@ -120,6 +120,11 @@
 }
 .headerLinks a {
   text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
   color: #6b7280;
 }
 
@@ -128,13 +133,20 @@
 }
 
 #contactLink {
-  border: 1px solid #4731d3;
+  border: 1px solid #3730a3;
   padding: 8px 16px;
   border-radius: 4px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3730a3;
 }
 
 #contactLink:hover {
-  background-color: #4731d3;
+  background-color: #3730a3;
   color: #fff;
 }
 
@@ -542,4 +554,130 @@ footer p {
 .dark-mode .contactContainer {
   background-color: #141414;
   color: #fff;
+}
+
+.dark-mode .modeText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+
+  color: #d9d9d9;
+}
+.dark-mode #lang {
+  color: #bab2e7;
+}
+
+.dark-mode .logo a {
+  text-decoration: none;
+  color: #8f88ff;
+
+  background: #4731d3;
+}
+
+.dark-mode .headerLinks a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.dark-mode .headerLinks a:hover {
+  color: #6b7280;
+}
+
+.dark-mode #contactLink {
+  border: 1px solid #3730a3;
+  background-color: #ffffff;
+  color: #3730a3;
+}
+
+.dark-mode #contactLink:hover {
+  background-color: #ffffff;
+  color: #3730a3;
+}
+
+/*DARK MODE - HERO */
+
+.dark-mode .lineContainer {
+  color: #b7aaff;
+}
+.dark-mode .line {
+  border: 1px solid #b7aaff;
+}
+
+.dark-mode .introContent h1 {
+  color: #aebccf;
+}
+
+.dark-mode .introContent p {
+  color: #ffffff;
+}
+
+.dark-mode .introContent a {
+  color: #e1e1ff;
+}
+
+/*DARK MODE -SKILLS */
+
+.dark-mode .skillsContainer h1 {
+  color: #aebccf;
+}
+
+.dark-mode .skillName {
+  color: #b7aaff;
+}
+
+.dark-mode .skillText {
+  color: #ffffff;
+}
+
+/*DARK MODE - PROFILE */
+
+.dark-mode .profileText h1 {
+  color: #aebccf;
+}
+
+.dark-mode .profileLeft h2 {
+  color: #b7aaff;
+}
+
+.dark-mode .profileRight h2 {
+  color: #b7aaff;
+}
+
+.dark-mode .profileRight p {
+  color: #ffffff;
+}
+
+.dark-mode .profileInfoLeft p {
+  color: #ffffff;
+}
+
+.dark-mode .profileInfoRight p {
+  color: #ffffff;
+}
+
+/*DARK MODE - PROJECTS */
+
+.dark-mode .projectsText h1 {
+  color: #aebccf;
+}
+
+/*DARK MODE - FOOTER*/
+
+.dark-mode footer h3 {
+  color: #aebccf;
+}
+
+.dark-mode .github {
+  color: #17d18b;
+}
+
+.dark-mode .linkedin {
+  color: #0ba6f6;
+}
+
+.dark-mode .email {
+  color: #bab2e7;
 }

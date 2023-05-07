@@ -7,9 +7,9 @@ import { MdEmail } from "react-icons/md";
 import { githubLink } from "../contents/contents";
 import { linkedinLink } from "../contents/contents";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
-    <div id="intro">
+    <div className="intro">
       <article className="introContent">
         <div className="introText">
           <div className="lineContainer">
@@ -22,10 +22,14 @@ const Hero = () => {
           </h1>
 
           <p>{introText}</p>
-          <div className="introButtons">
+          <div className={`introButtons ${darkMode ? "dark-mode" : ""}`}>
             <a
               href="#contact"
-              style={{ backgroundColor: "#3730A3", color: "white" }}
+              style={{
+                backgroundColor: darkMode ? "#E1E1FF" : "#3730A3",
+                color: darkMode ? "#000000" : "white",
+                border: darkMode ? "1px solid #E1E1FF" : "1px solid #3730A3",
+              }}
               className="textDec"
             >
               <MdEmail
@@ -35,20 +39,38 @@ const Hero = () => {
               />{" "}
               Contact
             </a>
-            <a href={githubLink} target="_blank" className="textDec">
+            <a
+              href={githubLink}
+              target="#"
+              className="textDec"
+              style={{
+                backgroundColor: darkMode ? "#383838" : "",
+                color: darkMode ? "#E1E1FF" : "#3730A3",
+                border: darkMode ? "1px solid #E1E1FF" : "1px solid #3730A3",
+              }}
+            >
               <BsGithub
                 style={{
                   fontSize: "20px",
-                  color: "#3730A3",
+                  color: darkMode ? "#E1E1FF" : "#3730A3",
                 }}
               />
               Github
             </a>
-            <a href={linkedinLink} target="_blank" className="textDec">
+            <a
+              href={linkedinLink}
+              target="#"
+              className="textDec"
+              style={{
+                backgroundColor: darkMode ? "#383838" : "",
+                color: darkMode ? "#E1E1FF" : "#3730A3",
+                border: darkMode ? "1px solid #E1E1FF" : "1px solid #3730A3",
+              }}
+            >
               <BsLinkedin
                 style={{
                   fontSize: "20px",
-                  color: "#3730A3",
+                  color: darkMode ? "#E1E1FF" : "#3730A3",
                 }}
               />{" "}
               LinkedIn

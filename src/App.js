@@ -55,10 +55,10 @@ function App() {
             </a>
           </nav>
         </header>
-        <Hero />
+        <Hero darkMode={darkMode} />
         <Skills />
         <Profile />
-        <Projects />
+        <Projects darkMode={darkMode} />
       </div>
       <Footer />
     </div>
