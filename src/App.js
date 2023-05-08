@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { Link } from "react-scroll";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,26 +41,31 @@ function App() {
             <a href="#">İ</a>
           </div>
           <nav className="headerLinks">
-            <a href="#skills" className="hover">
-              Skills
-            </a>
-            <a href="#projects" className="hover">
-              Projects
-            </a>
-            <a
-              href="mailto:ibrahimfevzi@gmail.com"
-              id="contactLink"
-              className="hover2"
-            >
-              Contact me!
-            </a>
+            <Link to="skillsScroll" smooth={true} duration={700}>
+              <a id="skills" href="#skills" className="hover">
+                Skills
+              </a>
+            </Link>
+            <Link to="projectsScroll" smooth={true} duration={700}>
+              <a id="projects" href="#projects" className="hover">
+                Projects
+              </a>
+            </Link>
+            <Link to="contactScroll" smooth={true} duration={700}>
+              <a href="#" id="contactLink" className="hover2">
+                Contact me!
+              </a>
+            </Link>
           </nav>
         </header>
         <Hero darkMode={darkMode} />
+        <div id="skillsScroll"></div>
         <Skills />
+        <div id="projectsScroll"></div>
         <Profile />
         <Projects darkMode={darkMode} />
       </div>
+      <div id="contactScroll"></div>
       <Footer />
     </div>
   );
