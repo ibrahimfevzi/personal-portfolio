@@ -22,12 +22,12 @@ const Header = ({ isMobile }) => {
           {isMobile ? (
             <>
               <a href="#" id="contactLink" className="hover2">
-                <span>Contact me!</span>
+                <span>Contact&#160;me!</span>
               </a>
             </>
           ) : (
             <a href="#" id="contactLink" className="hover2">
-              Contact me!
+              Contact&#160;me!
             </a>
           )}
         </Link>
