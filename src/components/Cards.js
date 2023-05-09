@@ -6,12 +6,20 @@ import { pizzaStoreText } from "../contents/contents";
 const Cards = ({ darkMode }) => {
   return (
     <div className="cardContainer">
-      <Card style={{ width: "25rem", minHeight: "575px", border: "none" }}>
+      <Card
+        style={{
+          width: "25rem",
+          minHeight: "585px",
+          border: "none",
+          margin: "0px 0px 0px 0px",
+          padding: "0px 0px 0px 0px",
+        }}
+      >
         <Card.Img
           variant="top"
           src={Pizza}
           style={{
-            width: "355px",
+            width: "auto",
             height: "auto",
             boxShadow: "rgba(0, 0, 0, 0.08) 0px 4px 12px",
           }}

@@ -27,7 +27,9 @@ const ModeSwitch = ({ handleToggle }) => {
         <span className="slider round"></span>
       </label>
       <div className="modeText">{darkMode ? "DARK MODE" : "LIGHT MODE"}</div>
-      <div className="modeText">|</div>
+      <div id="modeText2" className="modeText">
+        |
+      </div>
       <div className="modeText">
         <span id="lang">TÜRKÇE</span>'YE GEÇ
       </div>

@@ -1,5 +1,5 @@
 .App {
-  width: auto;
+  width: fit-content;
   text-align: center;
   padding-top: 2rem;
 }
@@ -480,10 +480,6 @@
   padding: 0;
 }
 
-.card:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-}
-
 .list-group {
   margin-top: 15px;
   display: flex;
@@ -587,9 +583,14 @@ footer p {
 }
 
 /* Telefona özgü stil */
+
 @media screen and (max-width: 767px) {
   .modeSwitch {
     justify-content: center;
+  }
+
+  #modeText2 {
+    display: none;
   }
 
   .header-body {
@@ -599,6 +600,7 @@ footer p {
   .headerLinks {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .headerLinks a {
@@ -675,10 +677,17 @@ footer p {
 
   .projectItems {
     flex-direction: column;
+    align-items: center;
   }
 
   .card {
     margin-bottom: 2rem;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
   }
 }
 
@@ -687,13 +696,16 @@ footer p {
   .modeSwitch {
     justify-content: center;
   }
-
+  #modeText2 {
+    display: none;
+  }
   .header-body {
     padding: 0 5rem;
   }
 
   .headerLinks {
     justify-content: center;
+    align-items: center;
   }
 
   .introContent {
@@ -760,10 +772,16 @@ footer p {
 
   .projectItems {
     flex-direction: column;
+    align-items: center;
   }
 
   .card {
     margin-bottom: 2rem;
+  }
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
   }
 }
 
@@ -772,6 +790,8 @@ footer p {
 .dark-mode {
   background-color: #252128;
   color: #fff;
+  width: fit-content;
+  text-align: center;
 }
 
 .dark-mode .card {
@@ -805,6 +825,9 @@ footer p {
   background: #4731d3;
 }
 
+.dark-mode .headerLinks {
+  text-align: center;
+}
 .dark-mode .headerLinks a {
   text-decoration: none;
   color: #6b7280;
