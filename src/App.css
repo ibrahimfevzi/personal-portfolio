@@ -588,13 +588,17 @@ footer p {
 
 /* Telefona özgü stil */
 @media screen and (max-width: 767px) {
+  .modeSwitch {
+    justify-content: center;
+  }
+
   .header-body {
     padding: 0 2rem;
   }
 
   .headerLinks {
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
   }
 
   .headerLinks a {
@@ -604,6 +608,12 @@ footer p {
 
   .introContent {
     flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .introImage {
+    margin-top: 2rem;
+    justify-content: center;
     align-items: center;
   }
 
@@ -674,12 +684,16 @@ footer p {
 
 /* Tablete özgü stil */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modeSwitch {
+    justify-content: center;
+  }
+
   .header-body {
     padding: 0 5rem;
   }
 
   .headerLinks {
-    gap: 3rem;
+    justify-content: center;
   }
 
   .introContent {
@@ -691,6 +705,11 @@ footer p {
     margin-right: 0;
     margin-bottom: 2rem;
     text-align: center;
+  }
+
+  .introImage {
+    margin-top: 2rem;
+    justify-content: center;
   }
 
   .introContent h1 {
