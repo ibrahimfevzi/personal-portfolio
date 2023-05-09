@@ -13,6 +13,7 @@
 .modeSwitch {
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   justify-content: right;
@@ -537,6 +538,48 @@ footer p {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 1610px) {
+  #contactLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #3730a3;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3730a3;
+  }
+
+  #contactLink #contactText {
+    margin-bottom: 4px;
+  }
+
+  #contactLink:hover {
+    background-color: #3730a3;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .introContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .introImage {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 /*DARK MODE */

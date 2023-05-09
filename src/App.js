@@ -6,13 +6,26 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
   };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1140);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>
@@ -52,9 +65,16 @@ function App() {
               </a>
             </Link>
             <Link to="contactScroll" smooth={true} duration={700}>
-              <a href="#" id="contactLink" className="hover2">
-                Contact me!
-              </a>
+              {isMobile ? (
+                <a href="#" id="contactLink" className="hover2">
+                  <span id="contactText">Contact</span>
+                  <span id="meText">me!</span>
+                </a>
+              ) : (
+                <a href="#" id="contactLink" className="hover2">
+                  Contact me!
+                </a>
+              )}
             </Link>
           </nav>
         </header>

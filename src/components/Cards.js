@@ -105,7 +105,7 @@ const Cards = ({ darkMode }) => {
             Github
           </Card.Link>
           <Card.Link
-            href="#"
+            href="https://ibrahim-pizza-order.netlify.app/"
             target="_blank"
             style={{ color: darkMode ? "#E1E1FF" : "#3730A3" }}
           >
