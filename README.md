@@ -39,7 +39,7 @@ If you want to run or contribute to my projects locally, follow the steps below:
 
 If you would like to learn more about my projects or collaboration opportunities, you can reach out to me:
 
-- Email: [email@example.com](mailto:email@example.com)
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/user)
+- Email: [email@example.com](mailto:ibrahimfevzi@gmail.com)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/ibrahim-f-kayan)
 
 The code under this project is licensed under the MIT License. For more information, please see the `LICENSE` file.
