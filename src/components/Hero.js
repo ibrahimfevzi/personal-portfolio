@@ -24,7 +24,7 @@ const Hero = ({ darkMode }) => {
           <p>{introText}</p>
           <div className={`introButtons ${darkMode ? "dark-mode" : ""}`}>
             <a
-              href="#contact"
+              href="mailto:ibrahimfevzi@gmail.com"
               style={{
                 backgroundColor: darkMode ? "#E1E1FF" : "#3730A3",
                 color: darkMode ? "#000000" : "white",
