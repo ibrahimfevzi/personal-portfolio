@@ -20,7 +20,7 @@ function App() {
       setIsMobile(window.innerWidth <= 1140);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
