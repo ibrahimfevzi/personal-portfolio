@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { javascriptText, reactText, nodeJsText } from "../contents/contents";
 
 const Skills = () => {
   return (
@@ -10,25 +10,16 @@ const Skills = () => {
       <div className="skills">
         <div className="skill">
           <div className="skillName">Javascript</div>
-          <div className="skillText">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </div>
+          <div className="skillText">{javascriptText}</div>
         </div>
 
         <div className="skill">
           <div className="skillName">React.Js</div>
-          <div className="skillText">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </div>
+          <div className="skillText">{reactText}</div>
         </div>
         <div className="skill">
           <div className="skillName">Node.Js</div>
-          <div className="skillText">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </div>
+          <div className="skillText">{nodeJsText}</div>
           <div />
         </div>
       </div>

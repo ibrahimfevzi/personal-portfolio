@@ -50,7 +50,7 @@
   cursor: pointer;
   top: 0;
   left: 0;
-  right: 3px;
+  right: 5px;
   bottom: 0;
   background-color: #4731d3;
   transition: 0.4s;
@@ -346,8 +346,8 @@
 .profile {
   display: flex;
   flex-direction: row;
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
@@ -355,8 +355,14 @@
 .profileLeft {
   display: flex;
   flex-direction: column;
-  flex: 1.5;
+  flex: 1;
   text-align: left;
+  margin-right: 2rem;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profileLeft h2 {
@@ -371,7 +377,7 @@
 .profileRight {
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 1;
   text-align: left;
 }
 
@@ -396,17 +402,31 @@
 .profileInfo {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 4rem;
+}
+
+.profileInfoRight {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.profileInfoLeft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .profileInfoLeft p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 200%;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0.01em;
   color: #000000;
 }
@@ -415,8 +435,8 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 200%;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0.01em;
   color: #000000;
 }
