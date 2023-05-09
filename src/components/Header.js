@@ -7,7 +7,7 @@ const Header = ({ isMobile }) => {
       <div className="logo">
         <a href="#">İ</a>
       </div>
-      <nav className="headerLinks">
+      <nav className={`headerLinks ${isMobile ? "mobileMenu" : ""}`}>
         <Link to="skillsScroll" smooth={true} duration={700}>
           <a id="skills" href="#skills" className="hover">
             Skills
@@ -20,10 +20,11 @@ const Header = ({ isMobile }) => {
         </Link>
         <Link to="contactScroll" smooth={true} duration={700}>
           {isMobile ? (
-            <a href="#" id="contactLink" className="hover2">
-              <span id="contactText">Contact</span>
-              <span id="meText">me!</span>
-            </a>
+            <>
+              <a href="#" id="contactLink" className="hover2">
+                <span>Contact me!</span>
+              </a>
+            </>
           ) : (
             <a href="#" id="contactLink" className="hover2">
               Contact me!

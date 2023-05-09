@@ -37,8 +37,8 @@ function App() {
         <Hero darkMode={darkMode} />
         <div id="skillsScroll"></div>
         <Skills />
-        <Profile />
         <div id="projectsScroll"></div>
+        <Profile />
         <Projects darkMode={darkMode} />
       </div>
       <div id="contactScroll"></div>

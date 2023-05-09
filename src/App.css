@@ -528,7 +528,7 @@ footer h3 {
 .contactContainer {
   background: #f9f9f9;
   height: 409px;
-  width: 100%;
+  width: auto;
   padding: 0 10rem;
 }
 
@@ -578,45 +578,173 @@ footer p {
   letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 1610px) {
-  #contactLink {
-    display: flex;
+/* TELEFON VE TABLET İÇİN STİLLER */
+
+.mobileMenu {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Telefona özgü stil */
+@media screen and (max-width: 767px) {
+  .header-body {
+    padding: 0 2rem;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .headerLinks a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .introContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .introText {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .introContent h1 {
+    font-size: 36px;
+  }
+
+  .introContent p {
+    font-size: 14px;
+  }
+
+  .introButtons {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #3730a3;
-    padding: 8px 16px;
-    border-radius: 4px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #3730a3;
   }
 
-  #contactLink #contactText {
-    margin-bottom: 4px;
+  .skills {
+    flex-direction: column;
   }
 
-  #contactLink:hover {
-    background-color: #3730a3;
-    color: #fff;
+  .skill {
+    margin-bottom: 1.5rem;
+  }
+
+  .skillText {
+    padding-right: 0;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profileLeft,
+  .profileRight {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .profileInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profileInfoLeft,
+  .profileInfoRight {
+    white-space: normal;
+  }
+
+  .projectsText h1 {
+    font-size: 36px;
+  }
+
+  .projectItems {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 2rem;
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .introContent {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+/* Tablete özgü stil */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-body {
+    padding: 0 5rem;
   }
-  .introImage {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: flex-start;
+
+  .headerLinks {
+    gap: 3rem;
+  }
+
+  .introContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introText {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .introContent h1 {
+    font-size: 48px;
+  }
+
+  .introButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    margin-bottom: 2rem;
+  }
+
+  .skillText {
+    padding-right: 0;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profileLeft,
+  .profileRight {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .profileInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profileInfoLeft,
+  .profileInfoRight {
+    white-space: normal;
+  }
+
+  .projectsText h1 {
+    font-size: 42px;
+  }
+
+  .projectItems {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 2rem;
   }
 }
 
