@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio - Ibrahim F. Kayan
 
 This is the GitHub repository for my personal portfolio page. I use this page to showcase my projects, introduce my skills, and share my experiences. Below are some sections to provide information about my projects.
 
