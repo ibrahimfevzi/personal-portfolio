@@ -589,10 +589,6 @@ footer p {
     justify-content: center;
   }
 
-  #modeText2 {
-    display: none;
-  }
-
   .header-body {
     padding: 0 2rem;
   }
@@ -631,6 +627,10 @@ footer p {
 
   .introContent p {
     font-size: 14px;
+  }
+
+  .lineContainer {
+    margin-bottom: 2rem;
   }
 
   .introButtons {
@@ -677,10 +677,11 @@ footer p {
   .projectItems {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
   }
 
-  .card {
-    margin-bottom: 2rem;
+  .cardContainer {
+    margin-bottom: 3rem;
   }
 
   .contactInfo {
