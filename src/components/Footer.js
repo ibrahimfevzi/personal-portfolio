@@ -2,15 +2,14 @@ import React from "react";
 import Point from "../contents/logos/point.svg";
 import { githubLink } from "../contents/contents";
 import { linkedinLink } from "../contents/contents";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="contactContainer">
       <footer>
-        <h3>
-          Let’s work together on <br />
-          your next product.
-        </h3>
+        <h3>{t("footerText")}</h3>
         <div className="contactInfo">
           <p>
             <img src={Point} style={{ marginRight: "5px" }} />

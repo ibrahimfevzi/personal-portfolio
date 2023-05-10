@@ -1,13 +1,14 @@
 import React from "react";
-import { introText } from "../contents/contents";
 import Photo from "../contents/introPhoto.png";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { githubLink } from "../contents/contents";
 import { linkedinLink } from "../contents/contents";
+import { useTranslation } from "react-i18next";
 
 const Hero = ({ darkMode }) => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="intro">
       <article className="introContent">
@@ -16,12 +17,9 @@ const Hero = ({ darkMode }) => {
             <div className="line"></div>
             <span>İbrahim Fevzi Kayan</span>
           </div>
-          <h1>
-            Creative thinker <br />
-            Minimalism lover
-          </h1>
+          <h1>{t("introTitle")}</h1>
 
-          <p>{introText}</p>
+          <p>{t("introText")}</p>
           <div className={`introButtons ${darkMode ? "dark-mode" : ""}`}>
             <a
               href="mailto:ibrahimfevzi@gmail.com"
@@ -37,7 +35,7 @@ const Hero = ({ darkMode }) => {
                   fontSize: "20px",
                 }}
               />{" "}
-              Contact
+              {t("navContact")}
             </a>
             <a
               href={githubLink}

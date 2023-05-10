@@ -1,16 +1,18 @@
 import React from "react";
 import { aboutMeText } from "../contents/contents";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
   return (
     <div className="profileContainer">
       <div className="cizgi"></div>
       <div className="profileText">
-        <h1>Profile</h1>
+        <h1>{t("profileTitle")}</h1>
       </div>
       <div className="profile">
         <div className="profileLeft">
-          <h2>Profile</h2>
+          <h2>{t("profileTitle")}</h2>
           <div className="profileInfo">
             <div className="profileInfoLeft">
               <p>Doğum Tarihi</p>
@@ -36,8 +38,8 @@ const Profile = () => {
           </div>
         </div>
         <div className="profileRight">
-          <h2>About Me</h2>
-          <p>{aboutMeText}</p>
+          <h2>{t("aboutMe")}</h2>
+          <p>{t("aboutMeText")}</p>
         </div>
       </div>
     </div>

@@ -29,6 +29,21 @@
 
   color: #777777;
 }
+.modeText2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  color: #777777;
+}
+
+.modeText2 span {
+  color: #4731d3;
+}
+
 #lang {
   color: #4731d3;
 }
@@ -841,15 +856,17 @@ footer p {
 }
 
 .dark-mode .modeText {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-
   color: #d9d9d9;
 }
+
+.dark-mode .modeText2 {
+  color: #d9d9d9;
+}
+
+.dark-mode .modeText2 span {
+  color: #8f88ff;
+}
+
 .dark-mode #lang {
   color: #bab2e7;
 }

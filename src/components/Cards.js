@@ -2,8 +2,10 @@ import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import Pizza from "../contents/pagePhotos/teknolojik-yemekler.png";
 import { pizzaStoreText } from "../contents/contents";
+import { useTranslation } from "react-i18next";
 
 const Cards = ({ darkMode }) => {
+  const { t } = useTranslation();
   return (
     <div className="cardContainer">
       <Card
@@ -117,7 +119,7 @@ const Cards = ({ darkMode }) => {
             target="_blank"
             style={{ color: darkMode ? "#E1E1FF" : "#3730A3" }}
           >
-            View Site
+            {t("viewSite")}
           </Card.Link>
         </Card.Body>
       </Card>
