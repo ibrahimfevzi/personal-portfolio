@@ -13,7 +13,7 @@ const Footer = () => {
         </h3>
         <div className="contactInfo">
           <p>
-            <img src={Point} style={{ marginRight: "10px" }} />
+            <img src={Point} style={{ marginRight: "5px" }} />
             {""}
             <a className="email" href="mailto:ibrahimfevzi@gmail.com">
               ibrahimfevzi@gmail.com

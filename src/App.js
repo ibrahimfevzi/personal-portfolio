@@ -10,7 +10,10 @@ import Footer from "./components/Footer";
 import { useEffect } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+    return savedDarkMode ? JSON.parse(savedDarkMode) : false;
+  });
   const [isMobile, setIsMobile] = useState(false);
 
   const handleToggle = () => {
@@ -28,6 +31,10 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : ""}`}>

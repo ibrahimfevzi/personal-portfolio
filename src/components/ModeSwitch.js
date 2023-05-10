@@ -22,7 +22,7 @@ const ModeSwitch = ({ handleToggle }) => {
           type="checkbox"
           className="toggle-switch-checkbox"
           onChange={toggleDarkMode}
-          checked={!darkMode}
+          checked={darkMode}
         />
         <span className="slider round"></span>
       </label>
