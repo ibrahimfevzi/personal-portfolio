@@ -799,6 +799,10 @@ footer p {
   .card {
     margin-bottom: 2rem;
   }
+
+  .cardContainer {
+    margin-bottom: 3rem;
+  }
   .contactInfo {
     flex-direction: column;
     align-items: center;
