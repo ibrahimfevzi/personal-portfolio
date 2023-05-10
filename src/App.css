@@ -585,6 +585,13 @@ footer p {
 /* Telefona özgü stil */
 
 @media screen and (max-width: 767px) {
+  body {
+    zoom: 0.7;
+    transform: scale(1);
+    transform-origin: 0 0;
+  }
+  /*telefonla girişte zoom yaparak başlamayı engellemek için yazdım. */
+
   .modeSwitch {
     justify-content: center;
   }
@@ -703,6 +710,11 @@ footer p {
 
 /* Tablete özgü stil */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    zoom: 0.9;
+    transform: scale(1);
+    transform-origin: 0 0;
+  }
   .modeSwitch {
     justify-content: center;
   }
