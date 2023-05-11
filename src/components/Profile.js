@@ -15,12 +15,12 @@ const Profile = () => {
           <div className="profileInfo">
             <div className="profileInfoItemSol">
               <div className="profileInfoItem">
-                <p>Doğum Tarihi</p>
+                <p>{t("birthday")}</p>
                 <p>29.05.1988</p>
                 <br />
               </div>
               <div className="profileInfoItem">
-                <p>Eğitim Durumu</p>
+                <p>{t("education")}</p>
                 <p>M.Sc. - Cyber Security - A. Yesevi Unv. (still ongoing)</p>
                 <p>M.Sc. - OHS - Kocaeli Unv.</p>
                 <p>Assc. Dg. - Computer Programming - Anadolu Unv.</p>
@@ -30,14 +30,14 @@ const Profile = () => {
             </div>
             <div className="profileInfoItemSag">
               <div className="profileInfoItem">
-                <p>İkamet Şehri</p>
+                <p>{t("residence")}</p>
                 <p>İstanbul</p>
                 <br />
               </div>
 
               <div className="profileInfoItem">
-                <p>Tercih Ettiği Rol</p>
-                <p>Frontend Developer</p>
+                <p>{t("preferredRole")}</p>
+                <p>{t("frontendDeveloper")}</p>
               </div>
             </div>
           </div>

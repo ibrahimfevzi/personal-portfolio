@@ -16,6 +16,11 @@ const resources = {
       navContact: "İletişim",
       skillsTitle: "Beceriler",
       profileTitle: "Profil",
+      birthday: "Doğum Tarihi",
+      residence: "Yaşadığı Yer",
+      preferredRole: "Tercih Ettiği Rol",
+      frontendDeveloper: "Ön Uç Geliştirici",
+      education: "Eğitim Durumu",
       aboutMe: "Hakkımda",
       aboutMeText:
         "Full stack web geliştirici olarak,  kariyer ve eğitim geçmişimin yanı sıra  Workintech eğitim kurumunda aldığım eğitimle bilgi ve becerilerimi önemli ölçüde geliştirdim. 900 saatten fazla süren bu yoğun eğitim programı, beni endüstri standartlarına uygun bir şekilde donatarak gerçek dünya projelerinde tecrübe kazanmama olanak sağladı. Bu süre zarfında, birçok projede aktif olarak yer aldım ve kendimi sürekli olarak geliştirme fırsatı buldum. Yazılım geliştirmeye olan merakım ve tutkum, tamamen kullanıcı odaklı deneyimler yaratma hedefiyle birleşti. Detaylara olan dikkatim ve görsel estetiğe verdiğim önemle, sezgisel ve etkileyici web uygulamaları oluşturmayı hedefledim. Bu süre içinde JavaScript, React.js ve Node.js gibi teknolojilerde becerilerimi geliştirdim. Bu sayede dinamik ve etkileşimli web siteleri inşa etme yeteneğine sahip oldum. Sürekli olarak kendimi güncel tutmak ve endüstri trendleriyle adım adım ilerlemek için çaba sarf ettim. Yaratıcılık, teknik uzmanlık ve sürekli öğrenme tutkum, kalıcı etkiler bırakan yüksek kaliteli çözümler sunma konusundaki taahhüdümü destekler. Aynı vizyona sahip profesyonellerle işbirliği yapmaktan heyecan duyuyorum ve her zaman yeni zorluklarla karşılaşmayı sabırsızlıkla bekliyorum.",
@@ -61,6 +66,11 @@ const resources = {
         "Hi, I’m İbrahim. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
       navContact: "Contact",
       profileTitle: "Profile",
+      birthday: "Birthday",
+      residence: "Residence",
+      preferredRole: "Preferred Role",
+      frontendDeveloper: "Frontend Developer",
+      education: "Education",
       skillsTitle: "Skills",
       aboutMe: "About Me",
       aboutMeText:
