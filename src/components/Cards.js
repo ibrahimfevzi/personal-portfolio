@@ -15,6 +15,7 @@ const Cards = ({
   return (
     <div className="cardContainer ">
       <Card
+        className="card"
         style={{
           width: "25rem",
           border: "none",
@@ -27,6 +28,7 @@ const Cards = ({
           src={imgSrc}
           style={{
             width: "25rem",
+            alignSelf: "center",
             height: "15rem",
             boxShadow: "rgba(0, 0, 0, 0.08) 0px 4px 12px",
           }}

@@ -365,6 +365,7 @@
   width: 100%;
   margin-bottom: 3rem;
   margin-top: 3rem;
+  gap: 2rem;
 }
 
 .profileLeft {
@@ -372,7 +373,6 @@
   flex-direction: column;
   flex: 1;
   text-align: left;
-  margin-right: 2rem;
 }
 
 .flexWrap {
@@ -416,44 +416,25 @@
 
 .profileInfo {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.profileInfoRight {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  white-space: nowrap;
+.profileInfoItemSol {
+  flex-basis: 60%;
 }
 
-.profileInfoLeft {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-}
-
-.profileInfoLeft p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.01em;
-  color: #000000;
-}
-
-.profileInfoRight p {
+.profileInfoItem p {
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
-  letter-spacing: 0.01em;
-  color: #000000;
+  color: #6b7280;
+}
+.profileInfoItem p:first-child {
+  font-weight: 700;
 }
 
 /*PROJECTS*/
@@ -483,6 +464,12 @@
 
 .card-body {
   padding: 0px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }
 
 .list-group {
@@ -673,7 +660,7 @@ footer p {
 
   .profileInfo {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 1rem;
   }
 
@@ -779,7 +766,7 @@ footer p {
 
   .profileInfo {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 1.5rem;
   }
 
@@ -930,6 +917,10 @@ footer p {
 }
 
 .dark-mode .profileRight p {
+  color: #ffffff;
+}
+
+.dark-mode .profileInfoItem p {
   color: #ffffff;
 }
 

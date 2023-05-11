@@ -1,5 +1,4 @@
 import React from "react";
-import { aboutMeText } from "../contents/contents";
 import { useTranslation } from "react-i18next";
 
 const Profile = () => {
@@ -14,26 +13,32 @@ const Profile = () => {
         <div className="profileLeft">
           <h2>{t("profileTitle")}</h2>
           <div className="profileInfo">
-            <div className="profileInfoLeft">
-              <p>Doğum Tarihi</p>
-              <p>İkamet Şehri</p>
-              <p>Eğitim Durumu</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>Tercih Ettiği Rol</p>
+            <div className="profileInfoItemSol">
+              <div className="profileInfoItem">
+                <p>Doğum Tarihi</p>
+                <p>29.05.1988</p>
+                <br />
+              </div>
+              <div className="profileInfoItem">
+                <p>Eğitim Durumu</p>
+                <p>M.Sc. - Cyber Security - A. Yesevi Unv. (still ongoing)</p>
+                <p>M.Sc. - OHS - Kocaeli Unv.</p>
+                <p>Assc. Dg. - Computer Programming - Anadolu Unv.</p>
+                <p>L.LB - Law - Marmara Unv.</p>
+                <p>B.Sc. - Mechanical Engineering - Suleyman Demirel Unv.</p>
+              </div>
             </div>
-            <div className="profileInfoRight">
-              <p>29.05.1988</p>
-              <p>İstanbul</p>
-              <p>M.Sc. - Cyber Security - A. Yesevi Unv. (still ongoing)</p>
-              <p>M.Sc. - OHS - Kocaeli Unv.</p>
-              <p>Assc. Dg. - Computer Programming - Anadolu Unv.</p>
-              <p>L.LB - Law - Marmara Unv.</p>
-              <p>B.Sc. - Mechanical Engineering - Suleyman Demirel Unv.</p>
+            <div className="profileInfoItemSag">
+              <div className="profileInfoItem">
+                <p>İkamet Şehri</p>
+                <p>İstanbul</p>
+                <br />
+              </div>
 
-              <p>Frontend Developer</p>
+              <div className="profileInfoItem">
+                <p>Tercih Ettiği Rol</p>
+                <p>Frontend Developer</p>
+              </div>
             </div>
           </div>
         </div>
