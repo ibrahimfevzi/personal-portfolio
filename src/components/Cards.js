@@ -69,8 +69,8 @@ const Cards = ({
               key={index}
               style={{
                 border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-                padding: "3px 12px 3px",
-                margin: "0px 3px 0px 0px",
+                padding: "3px 18px 3px",
+                margin: "0px 5px 0px 0px",
                 background: darkMode ? "#383838" : "#FFFFFF",
                 borderRadius: "4px",
                 fontWeight: "500",

@@ -313,7 +313,6 @@
 
 .skill {
   display: flex;
-  margin-bottom: 20px;
   text-align: left;
   flex: 1;
   flex-direction: column;
@@ -335,7 +334,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
   color: #6b7280;
   padding-top: 2rem;
   padding-right: 7rem;
