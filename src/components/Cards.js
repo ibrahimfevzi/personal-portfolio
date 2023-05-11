@@ -1,10 +1,16 @@
 import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
-import Pizza from "../contents/pagePhotos/teknolojik-yemekler.png";
-import { pizzaStoreText } from "../contents/contents";
 import { useTranslation } from "react-i18next";
 
-const Cards = ({ darkMode }) => {
+const Cards = ({
+  darkMode,
+  imgSrc,
+  title,
+  text,
+  githubLink,
+  siteLink,
+  tags,
+}) => {
   const { t } = useTranslation();
   return (
     <div className="cardContainer">
@@ -19,10 +25,10 @@ const Cards = ({ darkMode }) => {
       >
         <Card.Img
           variant="top"
-          src={Pizza}
+          src={imgSrc}
           style={{
-            width: "auto",
-            height: "auto",
+            width: "25rem",
+            height: "15rem",
             boxShadow: "rgba(0, 0, 0, 0.08) 0px 4px 12px",
           }}
         />
@@ -37,7 +43,7 @@ const Cards = ({ darkMode }) => {
               textAlign: "left",
             }}
           >
-            Teknolojik Yemekler
+            {title}
           </Card.Title>
           <Card.Text
             style={{
@@ -45,67 +51,37 @@ const Cards = ({ darkMode }) => {
               fontStyle: "normal",
               fontWeight: 400,
               fontSize: "14px",
-              lineHeight: "125%",
+              lineHeight: "1.5",
               color: darkMode ? "#FFFFFF" : "#6B7280",
               textAlign: "left",
+              maxHeight: "6rem",
+              minHeight: "6rem",
+              overflow: "auto",
             }}
           >
-            {pizzaStoreText}
+            {text}
           </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
-          <ListGroup.Item
-            style={{
-              border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-              padding: "6px 18px 7px",
-              background: darkMode ? "#383838" : "#FFFFFF",
-              borderRadius: "4px",
-              fontWeight: "500",
-              color: darkMode ? "#8F88FF" : "#3730A3",
-            }}
-          >
-            #React
-          </ListGroup.Item>
-          <ListGroup.Item
-            style={{
-              border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-              padding: "6px 18px 7px",
-              background: darkMode ? "#383838" : "#FFFFFF",
-              borderRadius: "4px",
-              fontWeight: "500",
-              color: darkMode ? "#8F88FF" : "#3730A3",
-            }}
-          >
-            #Router
-          </ListGroup.Item>
-          <ListGroup.Item
-            style={{
-              border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-              padding: "6px 18px 7px",
-              background: darkMode ? "#383838" : "#FFFFFF",
-              borderRadius: "4px",
-              fontWeight: "500",
-              color: darkMode ? "#8F88FF" : "#3730A3",
-            }}
-          >
-            #Axios
-          </ListGroup.Item>
-          <ListGroup.Item
-            style={{
-              border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-              padding: "6px 18px 7px",
-              background: darkMode ? "#383838" : "#FFFFFF",
-              borderRadius: "4px",
-              fontWeight: "500",
-              color: darkMode ? "#8F88FF" : "#3730A3",
-            }}
-          >
-            #Cypress
-          </ListGroup.Item>
+          {tags.map((tag, index) => (
+            <ListGroup.Item
+              key={index}
+              style={{
+                border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
+                padding: "6px 18px 7px",
+                background: darkMode ? "#383838" : "#FFFFFF",
+                borderRadius: "4px",
+                fontWeight: "500",
+                color: darkMode ? "#8F88FF" : "#3730A3",
+              }}
+            >
+              {tag}
+            </ListGroup.Item>
+          ))}
         </ListGroup>
         <Card.Body className="links" style={{ marginTop: "30px" }}>
           <Card.Link
-            href="https://github.com/ibrahimfevzi/fsweb-s7-challenge-pizza"
+            href={githubLink}
             target="_blank"
             style={{
               display: "flex",
@@ -115,7 +91,7 @@ const Cards = ({ darkMode }) => {
             Github
           </Card.Link>
           <Card.Link
-            href="https://ibrahim-pizza-order.netlify.app/"
+            href={siteLink}
             target="_blank"
             style={{ color: darkMode ? "#E1E1FF" : "#3730A3" }}
           >

@@ -27,6 +27,10 @@ const resources = {
         "Node.js, sunucu tarafında JavaScript geliştirmeye olanak sağlayan güçlü bir çalışma ortamıdır. Bir frontend geliştirici olarak, Node.js konusundaki yetkinliğim, hem tam yığın uygulamalar oluşturmamı hem de web projelerinin performansını optimize etmemi sağlar. Node.js ile sorunsuz bir şekilde asenkron görevleri yönetebilir, RESTful API'ler geliştirebilir ve çeşitli veritabanlarını entegre edebilirim. Bu, ölçeklenebilir, gerçek zamanlı ve veri odaklı uygulamalar oluşturmamı sağlar. Node.js paketleri ve çerçevelerinin geniş ekosistemini kullanarak, özellik açısından zengin web uygulamaları geliştirebilir, sunucu ve istemci arasındaki iletişimi sorunsuz hale getirerek kullanıcılara kesintisiz deneyimler sunabilirim.",
       projectsTitle: "Projeler",
       viewSite: "Siteye Git",
+      pizzaText: "Pizza Sipariş Uygulaması",
+      moviesText: "Film Arama Uygulaması",
+      journalText: "Minnet Günlüğü Uygulaması",
+      shoppingText: "Alışveriş Sepeti Uygulaması",
     },
   },
 
@@ -55,6 +59,11 @@ const resources = {
         "Node.js is a powerful runtime environment that allows for server-side JavaScript development. As a frontend developer, my proficiency in Node.js empowers me to build full-stack applications and optimize the performance of web projects. With Node.js, I can seamlessly handle asynchronous tasks, develop RESTful APIs, and integrate various databases. This enables me to build scalable, real-time, and data-driven applications. Leveraging the vast ecosystem of Node.js packages and frameworks, I can efficiently develop feature-rich web applications, ensuring smooth communication between the server and client, and providing users with seamless experiences.",
       projectsTitle: "Projects",
       viewSite: "View Site",
+      pizzaText:
+        "Introducing my pizza ordering page, a captivating project showcased in my frontend developer portfolio. Developed using React, this interactive webpage demonstrates my proficiency in utilizing essential tools such as Axios, Router, Cypress, and Yup. Seamlessly blending functionality and aesthetics, the pizza ordering page offers a delightful user experience, allowing customers to effortlessly customize their pizza selections and place orders with just a few clicks. With its sleek design and smooth navigation, this project exemplifies my expertise in creating engaging and responsive interfaces.",
+      moviesText: "Movies App",
+      journalText: "Gratitude Journal App",
+      shoppingText: "Shopping Cart App",
     },
   },
 };
