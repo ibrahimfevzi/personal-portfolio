@@ -15,7 +15,7 @@ const Hero = ({ darkMode }) => {
         <div className="introText">
           <div className="lineContainer">
             <div className="line"></div>
-            <span>İbrahim Fevzi Kayan</span>
+            <span>İbrahim F. Kayan</span>
           </div>
           <h1>{t("introTitle")}</h1>
 

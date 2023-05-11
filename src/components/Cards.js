@@ -55,8 +55,8 @@ const Cards = ({
               lineHeight: "1.5",
               color: darkMode ? "#FFFFFF" : "#6B7280",
               textAlign: "left",
-              maxHeight: "8rem",
-              minHeight: "8rem",
+              maxHeight: "10rem",
+              minHeight: "10rem",
               overflow: "auto",
             }}
           >

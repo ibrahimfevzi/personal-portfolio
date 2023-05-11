@@ -24,7 +24,7 @@ const Projects = ({ darkMode }) => {
           text={t("pizzaText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s7-challenge-pizza"
           siteLink="https://ibrahim-pizza-order.netlify.app/"
-          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+          tags={["#React", "#Router", "#Form", "#Cypress"]}
         />
         <Cards
           darkMode={darkMode}
@@ -33,7 +33,7 @@ const Projects = ({ darkMode }) => {
           text={t("moviesText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s10g2-redux-filmler"
           siteLink="https://ibrahim-redux-filmler.vercel.app/movies"
-          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+          tags={["#React", "#Router", "#Axios", "#Redux"]}
         />
         <Cards
           darkMode={darkMode}
@@ -42,7 +42,7 @@ const Projects = ({ darkMode }) => {
           text={t("journalText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s10-challenge"
           siteLink="https://ibrahim-minnet-gunlugu.vercel.app/"
-          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+          tags={["#React", "#Router", "#Redux", "#localStorage"]}
         />
         <Cards
           darkMode={darkMode}
@@ -60,7 +60,7 @@ const Projects = ({ darkMode }) => {
           text={t("calculatorText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s10g1-reducer-calculator"
           siteLink="https://ibrahim-reducer-calculator.vercel.app/"
-          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+          tags={["#React", "#Router", "#Javascript", "#useReducer"]}
         />
         <Cards
           darkMode={darkMode}
