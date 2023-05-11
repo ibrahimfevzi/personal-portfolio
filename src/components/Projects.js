@@ -5,6 +5,8 @@ import Pizza from "../contents/pagePhotos/teknolojik-yemekler.png";
 import movies from "../contents/pagePhotos/movies.png";
 import gratitude from "../contents/pagePhotos/gratitude.png";
 import shopping from "../contents/pagePhotos/shopping.png";
+import calculator from "../contents/pagePhotos/calculator.png";
+import friends from "../contents/pagePhotos/friends.png";
 
 const Projects = ({ darkMode }) => {
   const { t } = useTranslation();
@@ -18,7 +20,7 @@ const Projects = ({ darkMode }) => {
         <Cards
           darkMode={darkMode}
           imgSrc={Pizza}
-          title="Pizza Order"
+          title={t("pizzaTitle")}
           text={t("pizzaText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s7-challenge-pizza"
           siteLink="https://ibrahim-pizza-order.netlify.app/"
@@ -27,7 +29,7 @@ const Projects = ({ darkMode }) => {
         <Cards
           darkMode={darkMode}
           imgSrc={movies}
-          title="Movies"
+          title={t("moviesTitle")}
           text={t("moviesText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s10g2-redux-filmler"
           siteLink="https://ibrahim-redux-filmler.vercel.app/movies"
@@ -36,7 +38,7 @@ const Projects = ({ darkMode }) => {
         <Cards
           darkMode={darkMode}
           imgSrc={gratitude}
-          title="Gratitude Journal"
+          title={t("journalTitle")}
           text={t("journalText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s10-challenge"
           siteLink="https://ibrahim-minnet-gunlugu.vercel.app/"
@@ -45,10 +47,28 @@ const Projects = ({ darkMode }) => {
         <Cards
           darkMode={darkMode}
           imgSrc={shopping}
-          title="Shopping Cart"
+          title={t("shoppingTitle")}
           text={t("shoppingText")}
           githubLink="https://github.com/ibrahimfevzi/fsweb-s11g1-shopping-cart"
           siteLink="https://ibrahim-shopping-cart.vercel.app/"
+          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+        />
+        <Cards
+          darkMode={darkMode}
+          imgSrc={calculator}
+          title={t("calculatorTitle")}
+          text={t("calculatorText")}
+          githubLink="https://github.com/ibrahimfevzi/fsweb-s10g1-reducer-calculator"
+          siteLink="https://ibrahim-reducer-calculator.vercel.app/"
+          tags={["#React", "#Router", "#Axios", "#Cypress"]}
+        />
+        <Cards
+          darkMode={darkMode}
+          imgSrc={friends}
+          title={t("friendsTitle")}
+          text={t("friendsText")}
+          githubLink="https://github.com/ibrahimfevzi/fsweb-s11g2-client-auth-friends"
+          siteLink="https://ibrahim-client-auth-friends.vercel.app/"
           tags={["#React", "#Router", "#Axios", "#Cypress"]}
         />
       </div>

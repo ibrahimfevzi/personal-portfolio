@@ -13,14 +13,13 @@ const Cards = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <div className="cardContainer">
+    <div className="cardContainer ">
       <Card
         style={{
           width: "25rem",
-          minHeight: "585px",
           border: "none",
           margin: "0px 0px 0px 0px",
-          padding: "0px 0px 0px 0px",
+          padding: "2px 2px 2px 2px",
         }}
       >
         <Card.Img
@@ -38,7 +37,7 @@ const Cards = ({
               color: darkMode ? "#CFCBFF" : "#3730A3",
               fontWeight: "500",
               fontSize: "30px",
-              marginBottom: "15px",
+              marginBottom: "10px",
               marginTop: "20px",
               textAlign: "left",
             }}
@@ -54,8 +53,8 @@ const Cards = ({
               lineHeight: "1.5",
               color: darkMode ? "#FFFFFF" : "#6B7280",
               textAlign: "left",
-              maxHeight: "6rem",
-              minHeight: "6rem",
+              maxHeight: "8rem",
+              minHeight: "8rem",
               overflow: "auto",
             }}
           >
@@ -68,7 +67,8 @@ const Cards = ({
               key={index}
               style={{
                 border: `1px solid ${darkMode ? "#8F88FF" : "#3730A3"}`,
-                padding: "6px 18px 7px",
+                padding: "3px 12px 3px",
+                margin: "0px 3px 0px 0px",
                 background: darkMode ? "#383838" : "#FFFFFF",
                 borderRadius: "4px",
                 fontWeight: "500",
@@ -86,6 +86,7 @@ const Cards = ({
             style={{
               display: "flex",
               color: darkMode ? "#E1E1FF" : "#3730A3",
+              paddingBottom: "20px",
             }}
           >
             Github

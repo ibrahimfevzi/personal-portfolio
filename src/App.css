@@ -458,11 +458,6 @@
 
 /*PROJECTS*/
 
-.projectsContainer {
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
 .projectsText h1 {
   font-family: "Inter";
   font-style: normal;
@@ -481,18 +476,13 @@
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  gap: 1rem;
 }
 
 /*CARDS*/
 
-.card {
-  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
-  padding: 25px;
-}
-
 .card-body {
-  padding: 0;
+  padding: 0px;
 }
 
 .list-group {
@@ -509,7 +499,6 @@
   gap: 20px;
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 2rem;
 }
 .links a {
   font-family: "Inter";
@@ -703,10 +692,6 @@ footer p {
     margin-bottom: 2rem;
   }
 
-  .cardContainer {
-    margin-bottom: 3rem;
-  }
-
   .contactInfo {
     flex-direction: column;
     align-items: center;
@@ -813,13 +798,6 @@ footer p {
     margin-bottom: 2rem;
   }
 
-  .card {
-    margin-bottom: 2rem;
-  }
-
-  .cardContainer {
-    margin-bottom: 3rem;
-  }
   .contactInfo {
     flex-direction: column;
     align-items: center;
