@@ -779,7 +779,8 @@ footer p {
   }
 
   .projectItems {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 2rem;
   }
