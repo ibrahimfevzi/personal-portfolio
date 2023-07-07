@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../contents/introPhoto.png";
+import Photo from "../contents/introPhoto.jpg";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
