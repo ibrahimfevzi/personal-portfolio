@@ -29,8 +29,20 @@ const resources = {
       reactText:
         "React.js, kullanıcı arayüzleri oluşturmak için popüler bir JavaScript kütüphanesidir ve ben yeteneklerimi geliştirerek sağlam ve verimli bir şekilde frontend uygulamaları oluşturmak için React.js'in yeteneklerini kullanmayı öğrendim. React.js ile karmaşık kullanıcı arayüzü bileşenlerini yeniden kullanılabilir ve modüler bir kod haline getirebilir, bu sayede sürdürülebilirlik ve ölçeklenebilirlik sağlanır. React'in sanal DOM özelliğini kullanarak gereksiz yeniden-render işlemlerini en aza indirerek performansı optimize edebilir ve uygulamaların genel tepkisini artırabilirim. React.js ile olan deneyimim, dinamik, etkileşimli ve görsel açıdan çekici kullanıcı arayüzleri oluşturmama olanak sağlar ve olağanüstü bir kullanıcı deneyimi sunar.",
       nodeJsText:
-        "Node.js, sunucu tarafında JavaScript geliştirmeye olanak sağlayan güçlü bir çalışma ortamıdır. Bir frontend geliştirici olarak, Node.js konusundaki yetkinliğim, hem tam yığın uygulamalar oluşturmamı hem de web projelerinin performansını optimize etmemi sağlar. Node.js ile sorunsuz bir şekilde asenkron görevleri yönetebilir, RESTful API'ler geliştirebilir ve çeşitli veritabanlarını entegre edebilirim. Bu, ölçeklenebilir, gerçek zamanlı ve veri odaklı uygulamalar oluşturmamı sağlar. Node.js paketleri ve çerçevelerinin geniş ekosistemini kullanarak, özellik açısından zengin web uygulamaları geliştirebilir, sunucu ve istemci arasındaki iletişimi sorunsuz hale getirerek kullanıcılara kesintisiz deneyimler sunabilirim.",
-      projectsTitle: "Projeler",
+        "Node.js, sunucu tarafında JavaScript geliştirmeye olanak sağlayan güçlü bir çalışma ortamıdır. Bir full-stack geliştirici olarak, Node.js konusundaki yetkinliğim, hem tam yığın uygulamalar oluşturmamı hem de web projelerinin performansını optimize etmemi sağlar. Node.js ile sorunsuz bir şekilde asenkron görevleri yönetebilir, RESTful API'ler geliştirebilir ve çeşitli veritabanlarını entegre edebilirim. Bu, ölçeklenebilir, gerçek zamanlı ve veri odaklı uygulamalar oluşturmamı sağlar. Node.js paketleri ve çerçevelerinin geniş ekosistemini kullanarak, özellik açısından zengin web uygulamaları geliştirebilir, sunucu ve istemci arasındaki iletişimi sorunsuz hale getirerek kullanıcılara kesintisiz deneyimler sunabilirim.",
+      reduxText:
+        "Redux, React uygulamaları için popüler bir durum yönetim kütüphanesidir. Bir frontend geliştirici olarak, Redux ile React uygulamalarında verilerin tek bir merkezi depoda yönetilmesini sağlayabilirim. Redux, uygulamanın durumunu öngörülebilir ve kolayca yönetilebilir kılar, böylece bileşenler arasında veri paylaşımı ve senkronizasyonu daha etkili hale gelir. Ayrıca, Redux DevTools gibi araçlar kullanarak uygulamanın durumunu izleyebilir ve hata ayıklama sürecini kolaylaştırabilirim.",
+      // Python
+      pythonText:
+        "Python, basit ve anlaşılır sözdizimi ile popüler bir programlama dilidir. Birçok farklı alanda kullanılabilir ve web geliştirme, veri analitiği, yapay zeka ve bilimsel hesaplamalar gibi çeşitli projelerde tercih edilir. Ben bir yazılım geliştirici olarak, Python dilini verimli bir şekilde kullanarak projeler geliştirebilir, kütüphaneleri ve araçları entegre edebilir ve işlevsel ve etkileyici uygulamalar oluşturabilirim.",
+      // HTML
+      htmlText:
+        "HTML, web sayfalarının yapısını tanımlamak için kullanılan temel işaretleme dilidir. Bir frontend geliştirici olarak, HTML'i iyi bir şekilde anlayarak ve uygulayarak, güzel ve düzenli web sayfaları oluşturabilirim. Web uygulamalarının temel taşı olan HTML, diğer teknolojilerle birlikte kullanılarak etkileşimli ve kullanıcı dostu arayüzlerin temelini oluşturur.",
+      // CSS
+      cssTitle: "CSS",
+      cssText:
+        "CSS, web sayfalarının stil ve düzenini kontrol etmek için kullanılan bir stil yapma dilidir. Bir frontend geliştirici olarak, CSS kullanarak web sitelerinin görsel tasarımını geliştirebilir, düzenleyebilir ve özelleştirebilirim. CSS ile farklı ekran boyutlarına uygun duyarlı tasarımlar oluşturarak kullanıcı deneyimini iyileştirebilirim. Ayrıca, CSS ön işlemcilerini (örn. Sass) ve CSS çerçevelerini (örn. Bootstrap) kullanarak tasarım süreçlerini daha da verimli hale getirebilirim.",
+      projectsTitle: "Örnek Projeler",
       viewSite: "Siteye Git",
       pizzaTitle: "Pizza Sipariş",
       moviesTitle: "Film Arama",
@@ -80,8 +92,19 @@ const resources = {
       reactText:
         "React.js is a popular JavaScript library for building user interfaces, and I have honed my skills in leveraging its capabilities to create robust and efficient frontend applications. With React.js, I can efficiently break down complex UI components into reusable and modular code, ensuring maintainability and scalability. By utilizing React's virtual DOM, I can optimize performance by minimizing unnecessary re-rendering and enhancing the overall responsiveness of applications. My experience in working with React.js enables me to create dynamic, interactive, and visually appealing user interfaces that provide an exceptional user experience.",
       nodeJsText:
-        "Node.js is a powerful runtime environment that allows for server-side JavaScript development. As a frontend developer, my proficiency in Node.js empowers me to build full-stack applications and optimize the performance of web projects. With Node.js, I can seamlessly handle asynchronous tasks, develop RESTful APIs, and integrate various databases. This enables me to build scalable, real-time, and data-driven applications. Leveraging the vast ecosystem of Node.js packages and frameworks, I can efficiently develop feature-rich web applications, ensuring smooth communication between the server and client, and providing users with seamless experiences.",
-      projectsTitle: "Projects",
+        "Node.js is a powerful runtime environment that allows for server-side JavaScript development. As a full-stack developer, my proficiency in Node.js empowers me to build full-stack applications and optimize the performance of web projects. With Node.js, I can seamlessly handle asynchronous tasks, develop RESTful APIs, and integrate various databases. This enables me to build scalable, real-time, and data-driven applications. Leveraging the vast ecosystem of Node.js packages and frameworks, I can efficiently develop feature-rich web applications, ensuring smooth communication between the server and client, and providing users with seamless experiences.",
+      reduxText:
+        "Redux is a popular state management library for React applications. As a frontend developer, I can utilize Redux to manage data in a single centralized store for React applications. Redux makes the application state predictable and easily manageable, enabling more efficient data sharing and synchronization between components. Additionally, I can use tools like Redux DevTools to monitor the application state and facilitate the debugging process.",
+      // Python
+      pythonText:
+        "Python is a popular programming language with a simple and understandable syntax. It can be used in various fields, such as web development, data analytics, artificial intelligence, and scientific computing. As a software developer, I can efficiently use the Python language to develop projects, integrate libraries and tools, and create functional and impressive applications.",
+      // HTML
+      htmlText:
+        "HTML is the fundamental markup language used to define the structure of web pages. As a frontend developer, with a good understanding and implementation of HTML, I can create beautiful and well-organized web pages. HTML forms the foundation of web applications, working together with other technologies to build interactive and user-friendly interfaces.",
+      // CSS
+      cssText:
+        "CSS is a styling language used to control the style and layout of web pages. As a frontend developer, I can use CSS to enhance, customize, and style the visual design of websites. By creating responsive designs that adapt to different screen sizes, I can improve the user experience. Additionally, I can use CSS preprocessors (e.g., Sass) and CSS frameworks (e.g., Bootstrap) to make the design process even more efficient.",
+      projectsTitle: "Sample Projects",
       viewSite: "View Site",
       pizzaTitle: "Pizza Order",
       moviesTitle: "Movies App",

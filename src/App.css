@@ -304,19 +304,17 @@
 
 .skills {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
 .skill {
-  display: flex;
-  text-align: left;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
+  flex-basis: calc(
+    33.33% - 1rem
+  ); /* Divide into three columns with some spacing in between */
+  margin-bottom: 1rem; /* Add some margin between each skill */
+  padding: 0 3%;
 }
 
 .skillName {
@@ -337,7 +335,6 @@
   line-height: 16px;
   color: #6b7280;
   padding-top: 2rem;
-  padding-right: 7rem;
 }
 
 /*PROFILE*/
